@@ -34,8 +34,8 @@
 	<script src="./assets/scripts.js"></script>
 </head>
 <body>
-    <div class="top-header">
-        <h3 class="name">Nina Carducci</h3>
+    <div class="top-header" itemscope itemtype ="https://schema.org/Person">
+        <h3 class="name" itemprop="givenName">Nina <span itemprop="familyName">Carducci</span></h3>
 
         <div class="nav">   
             <ul>
@@ -80,20 +80,20 @@
         </div>
     </div>
 
-    <div id="about">
+    <div id="about" itemscope itemtype ="https://schema.org/Person">
         <div class="picture left">
-            <img src="./assets/images/nina.png" alt="Portrait of Nina Carducci">
+            <img src="./assets/images/nina.png" alt="Portrait of Nina Carducci" itemprop="portrait">
         </div>
 
         <div id="about-me">
             <h3 class="about-me__title">A propos de moi</h3>
-            <h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+            <h6 class="about-me__introduction" itemprop="about">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
             <p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
                 C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
         </div>
     </div>
 
-    <div id="gallery">
+    <div id="gallery" itemscope itemtype ="https://schema.org/Photographs">
         <h3 class="title">Portfolio</h3>
 
         <div class="container py-3">
@@ -115,6 +115,7 @@
                 <blockquote>
                     <h1 class="quote__text">Un portrait n'est pas une ressemblance. Dès lors qu'une émotion ou qu'un fait est traduit en photo, il cesse d'être un fait pour devenir une opinion. L'inexactitude n'existe pas en photographie. Toutes les photos sont exactes. Aucune d'elles n'est la vérité.</h1>
                 </blockquote>
+
                 <figcaption class="quote__author">- Richard Avedon</figcaption>
             </figure>
         </div>
@@ -123,39 +124,39 @@
     <div id="services">
         <h3 class="title">Mes services</h3>
 
-        <div class="container">
-            <div class="service">
+        <div class="container" itemscope itemtype="https://schema.org/PhotographerServices">
+            <div class="service" itemprop="Shooting photo">
                 <div class="service__description">
                     <h3>Shooting photo</h3>
                     <p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
                 </div>
 
                 <div class="service__price">
-                    <h4>350€/demi journée</h4>
+                    <h4 itemprop="Shooting photo service price">350€/demi journée</h4>
                     <span>Matériel, déplacement inclus</span>
                 </div>
             </div>
 
-            <div class="service">
+            <div class="service" itemprop="Photography retouching">
                 <div class="service__description">
                     <h3>Retouches</h3>
                     <p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d'un rendu optimal pour vos publications</p>
                 </div>
 
                 <div class="service__price">
-                    <h4>50€/photo</h4>
+                    <h4 itemprop="Photo retouching service price">50€/photo</h4>
                     <span>2 AR par photo</span>
                 </div>
             </div>
 
-            <div class="service">
+            <div class="service" itemprop="Photo album creation">
                 <div class="service__description">
                     <h3>Album photos</h3>
                     <p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
                 </div>
 
                 <div class="service__price">
-                    <h4>400€ album A4</h4>
+                    <h4 itemprop="Album creation service price">400€ album A4</h4>
                     <span>30 pages recto/verso</span>
                 </div>
             </div>
@@ -171,7 +172,7 @@
         </figure>
     </div>
     
-    <div id="contact">
+    <div id="contact" itemprop="contactPoint">
         <div class="container">
             <div class="form-container">
                 <h3>Une question ? Une demande de devis ?</h3>
